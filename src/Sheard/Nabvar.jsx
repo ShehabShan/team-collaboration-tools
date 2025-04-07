@@ -15,7 +15,7 @@ const Navbar = () => {
   };
 
   const links = (
-    <div className="text-white">
+    <>
       <li>
         <NavLink to="/">Home</NavLink>
       </li>
@@ -28,7 +28,7 @@ const Navbar = () => {
       <li>
         <NavLink to="/">About Us</NavLink>
       </li>
-    </div>
+    </>
   );
 
   const dropDown = (
@@ -70,7 +70,7 @@ const Navbar = () => {
             </div>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content bg-base-100 text-[#7d7d7d] rounded-box z-[1] mt-3 w-52 p-2 shadow"
+              className="menu menu-sm dropdown-content bg-base-100 text-white lg:text-[#000000] rounded-box z-[1] mt-3 w-52 p-2 shadow"
             >
               {links}
             </ul>
@@ -92,7 +92,7 @@ const Navbar = () => {
 
         <div className="">
           {!user ? (
-            <div className="space-x-4">
+            <div className="space-x-4 mr-2">
               <Link to="/login" className="btn bg-blue-500 text-white ">
                 Login
               </Link>
